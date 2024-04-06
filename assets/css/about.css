@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* Base style */
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+@media screen and (max-width: 599px){
+    body {
+        font-size: 10px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+	float: none;
+	position: static;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* 共通スタイル */
+/* header */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.header-logo{
+    margin: 0;
+}
+.header-logo > a{
+    display: block;
+}
+/* .header-nav{} */
+.header-navlist{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .header-navitem{} */
+.header-navitem > a{
+    display: block;
+    padding: 30px 30px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: border-color .25s;
+    border-bottom: 2px solid transparent;
+}
+.header-navitem > a:hover{
+    border-bottom: 2px solid #333;
+}
+@media screen and (max-width: 768px){
+    .header{
+        padding: 10px 20px;
+    }
+    .header-logo > a > img{
+        width: 30px;
+        height: 30px;
+    }
+    .header-navitem > a{
+        padding: 20px 20px 10px;
+    }
+}
+/* main */
+.title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.about{
+    margin: 0 10%;
+    margin-top: 150px;
+}
+.about-top{
+    margin: 0 30px;
+}
+.about-img{
+    object-fit: cover;
+}
+.text1{
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 100px;
+}
+.explanation{
+    display: flex;
+    margin-bottom: 50px;
+}
+.text-2{
+    padding-left: 80px;
+}
+.text-contents{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.text-contents > dt{
+    font-size: 18px;
+    font-weight: bold;
+    width: 30%;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+} 
+.text-contents > dd{
+    font-size: 18px;
+    width: 70%;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1100px){
+    .explanation{
+        display: block;
+    }
+    .about-img{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .text-2{
+        padding: 30px 0 0;
+    }
+    .text-contents{
+        display: block;
+        padding-bottom: 20px;
+    }
+    .text-contents > dt{
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    } 
+    .text-contents > dd{
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+footer{
+    background: #f0f0f0;
+    padding: 0 0 10px 0;
+}
+.footer-content{
+    width: 100%;
+    padding: 50px 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo-name{
+    padding-left: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-nav-item{
+    display: flex;
+}
+.nav-member{
+    font-size: 20px;
+    list-style: none;
+}
+.nav-link{
+    padding: 30px 10px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: border-color .25s;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #333;
+}
+.copyright{
+    text-align: center;
+    margin: 0 20px;
+}
+@media screen and (max-width: 768px){
+    .footer-content{
+    justify-content: center;
+    padding: 30px 10px 40px;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .footer-logo > a > img{
+        width: 30px;
+        height: 30px;
+    }
+    .logo-name{
+        font-size: 15px;
+    }
+    
+}
